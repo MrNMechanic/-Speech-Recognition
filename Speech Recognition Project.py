@@ -1,8 +1,8 @@
 import os
 import speech_recognition as sr
 
-mylist = ["C:\Users\hp\Desktop\BANANA", "C:\Users\hp\Desktop\Haar Training",
-              "C:\Users\hp\Desktop\Drive-Github Projects", "C:\Users\hp\Desktop\Open CV Projects"]
+mylist = ["first path", "second path",
+              "third path", "fourth path"] #you can add as many paths as you like#
 
 
 r = sr.Recognizer()
@@ -22,7 +22,7 @@ with sr.Microphone() as source:
 
 
 
-while r.recognize_sphinx(audio) != ('stop'):
+while r.recognize_sphinx(audio) != ('stop'): #say stop to terminate the process#
 
 
     if r.recognize_sphinx(audio) == ('one'):
